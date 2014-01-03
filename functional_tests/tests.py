@@ -55,7 +55,7 @@ class NewVisitorTest(LiveServerTestCase):
 
         # Now a new user, Seurirang, comes along to the site.
         self.browser.quit()
-        self.browser.webdriver.Firefox()
+        self.browser = webdriver.Firefox()
 
         # Seurirang visits the home page.  There is no sign of Arirang's list.
         self.browser.get(self.live_server_url)
