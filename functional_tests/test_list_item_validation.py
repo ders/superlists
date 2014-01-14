@@ -10,7 +10,7 @@ class ItemValidationTest(FunctionalTest):
 
         # The home page refreshes, and there is an error message saying that
         # list items cannot be blank.
-        error = self.browser.find_element_by_css_selector('.has_error')
+        error = self.browser.find_element_by_css_selector('.has-error')
         self.assertEqual(error.text, "You can't have an empty list item")
 
         # He tries again with some text for the item, and it now works.
